@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h3, h4{
+  text-transform: uppercase;
+}
+
+/* Colors */
+
+/* BG Blue #3DB6E9 */
+/* Blanco #F8F8F8 */
+/* BG Footer ##NO ESTAAAA LO INVENTO##  #5e5e5e*/
+
+
+/* ----HOME----- */
+#home{
+  height: 100vh;
+  background-image: url(../image/working11.png);
+  background-size: cover;
+}
+
+h1{
+  text-transform: uppercase;
+  padding-top: 20%;
+}
+
+#home h1, h2{
+    width: 50%;
+}
+.bottomHomea{
+  text-align: right;
+}
+
+/* ----COBERTURAS---- */
+
+.conocer{
+  height: 100vh;
+}
+.cobertura2 {
+  padding: 2% 16%;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.cobertura2 img {
+  width: 50%;
+}
+
+/* ----POR QUE ELEGIRNOS---- */
+.porQue{
+  background-color: #3DB6E9;
+  height: 100vh;
+  background-image: url(../image/flechas_home_lg.png)
+}
+.cualidades{
+  padding: 8%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.textosPorque{
+  background-color: #F8F8F8;
+  height: 40vh;
+  padding-top: 30%;
+}
+
+.cualidades2 {
+padding-left: 5%;
+padding-right: 5%;
+width: 50%;
+}
+
+
+/* ----EMPRESAS QUE NOS ACOMPAÑAN---- */
+
+#empresas{
+  height: 100vh;
+}
+
+/* ------FOOTER------- */
+
+footer {
+  background-color: #5e5e5e;
+}
+.footerContact {
+  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+
+}
+.footerMedia img{
+  width: 5%;
+}
