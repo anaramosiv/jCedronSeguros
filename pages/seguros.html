@@ -14,7 +14,75 @@
 <body>
 
 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <div class="container">
+                  <a class="navbar-brand" href="#">
+                    <img src="../image/josecedron-horizontal.svg" alt="" width="20%">
+                  </a>
+                </div>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="px-4 text-rojo font-bold text-uppercase" aria-current="page" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-4 text-rojo font-bold text-uppercase" href="#">Seguros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-4 px-8 text-rojo font-bold text-uppercase" href="#">Sobre mì</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="px-4 text-rojo font-bold text-uppercase" href="#">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-primary font-bold text-uppercase rounded" href="#">Cotizar</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
 
+    <main>
+        <div class="container">
+        
+        <section>
+            <h4 class="text-uppercase text-rojo font-bold">particulares</h4>
+            <p>La protección que necesitas para tus bienes personales</p>
+                <div class="row" id="seguros_particulares">
+                </div>  
+        </section>
+        
+        </div>
+        <section class="bg-azul">
+            <div class="container">
+            <h4 class="text-uppercase text-rojo font-bold">personas</h4>
+            <p>Asegurà el presente y futuro de tu familia con herramientas financieras sencillas</p>
+            <div class="row" id="seguros_personas">
+            </div>  
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+            <h4 class="text-uppercase text-rojo font-bold">empresas</h4>
+            <p>Portegemos las inversiones de todos los sectores a través de estas herramientas</p>
+            <div class="row" id="seguros_empresas">
+            </div>  
+        </section>  
+        </div>
+    </main>
+
+
+    <script src="../js/renderCards.js"></script>
+    <script src="../js/renderPersonas.js"></script>
+    <script src="../js/renderEmpresas.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
         integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
     </script>

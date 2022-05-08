@@ -1,10 +1,39 @@
+/*----variables-------*/
+:root{
+  --primary-color: #27A7E1;
+  --secondary-color: #C30C22;
+  --on-secondary-color: #F8F8F8;
+
+}
+
+.bg-azul{
+  background-color: var(--primary-color);
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+
 h3, h4{
   text-transform: uppercase;
+}
+
+.decoration-none a{
+  text-decoration: none;
+}
+
+li a{
+  text-decoration: none;
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+ text-align: center;
+ font-size: 1rem;
+
 }
 
 /* Colors */
@@ -12,28 +41,105 @@ h3, h4{
 /* BG Blue #3DB6E9 */
 /* Blanco #F8F8F8 */
 /* BG Footer ##NO ESTAAAA LO INVENTO##  #5e5e5e*/
+/* ROJO NO ESTA. #C30C22
+
 
 
 /* ----HOME----- */
 #home{
   height: 100vh;
   background-image: url(../image/working11.png);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
-
+@media (max-width: 600px) {
+  #home{
+    background-image: url(../image/homeMobile.png);
+  }
+}
 h1{
   text-transform: uppercase;
   padding-top: 20%;
+  color: var(--primary-color);
 }
 
+.boton{
+  background-color: var(--secondary-color);
+  color: var(--on-secondary-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+
+
+}
+.rounded a{
+  border-radius: 10rem;
+}
+ 
 #home h1, h2{
     width: 50%;
 }
-.bottomHomea{
+.bottomHome a{
   text-align: right;
 }
 
-/* ----COBERTURAS---- */
+.image-wpp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+
+/* ----------------------------------COBERTURAS------------------------------ */
+
+/*--card--*/
+.wrapper{
+  -webkit-box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.24);
+-moz-box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.24);
+box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.24);
+}
+
+.image-card{
+  transform: translateY(-30%);
+}
+
+
+.justify-contenido-between{
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+  
+}
+
+.my-auto{
+  margin: auto 0;
+}
+
+
+
+.justify-contenido-around{
+  justify-content: space-around;
+}
+
+.align-content-center{
+  align-content: center;
+}
+
+.align-content-between{
+  align-content: space-between;
+}
+.center{
+  text-align: center;
+}
+
+.font-bold{
+  font-weight: bold;
+}
 
 .conocer{
   height: 100vh;
@@ -44,17 +150,38 @@ h1{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  margin-top: 5%;   /* contrarestar el efecto del tralado de las imagenes */
 }
 
 .cobertura2 img {
   width: 50%;
 }
 
-/* ----POR QUE ELEGIRNOS---- */
+/* -----------------------------------------POR QUE ELEGIRNOS--------------------- */
 .porQue{
   background-color: #3DB6E9;
   height: 100vh;
   background-image: url(../image/flechas_home_lg.png)
+}
+.bg-card{
+  background-color: var(--on-secondary-color);
+  min-height: 60vh;
+  max-width: 20vw;
+}
+
+.text-white{
+  color: var(--on-secondary-color);
+}
+.m-4{
+  margin: 1rem;
+}
+
+.px-8{
+  margin-left: 2rem;
+  
+}
+.px-4{
+  padding: 1rem;
 }
 .cualidades{
   padding: 8%;
@@ -76,13 +203,29 @@ width: 50%;
 }
 
 
-/* ----EMPRESAS QUE NOS ACOMPAÑAN---- */
+/* ----------------------------------EMPRESAS QUE NOS ACOMPAÑAN--------------------- */
 
-#empresas{
-  height: 100vh;
+.h-3_4{
+  height: 75vh;
 }
 
-/* ------FOOTER------- */
+.bg-image{
+  background-image: url(../image/flechas_home_lg.png);
+}
+
+
+
+
+
+/* ---------------------------------------------FOOTER------------------------------------ */
+
+.h-1_4{
+  height: 25vh;
+}
+
+.w-icon{
+  width: 3rem;
+}
 
 footer {
   background-color: #5e5e5e;
@@ -99,4 +242,35 @@ footer {
 }
 .footerMedia img{
   width: 5%;
+}
+
+.ssn-icon{
+  width: 40%;
+}
+
+/*--------------------------------------------clases generales----------------------*/
+.h-screen{
+  height: 100vh;
+}
+
+.text-uppercase{
+  text-transform: uppercase;
+}
+
+.flex{
+  display: flex;
+}
+.flex-col{
+  flex-direction: column;
+}
+.justify-content-center{
+  justify-content: center;
+}
+
+.text-rojo{
+  color: var(--secondary-color);
+}
+
+.text-blue{
+  color: var(--primary-color);
 }
