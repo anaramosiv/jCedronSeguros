@@ -3,7 +3,22 @@
   --primary-color: #27A7E1;
   --secondary-color: #C30C22;
   --on-secondary-color: #F8F8F8;
+  --surface: #ebebeb;
+  --surface-on-primary: #FFFFFF;
 
+
+}
+
+.bg-surface{
+  background-color: var(--surface);
+}
+
+.bg-surface-on-primary{
+  background-color: var(--surface-on-primary);
+}
+
+.rounded-10px{
+  border-radius: 10px;
 }
 
 .bg-azul{

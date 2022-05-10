@@ -27,19 +27,27 @@ const PERSONALES = [
 const rendercards_personas = document.querySelector('#seguros_personas');
 
 
-rendercards_personas.innerHTML = PERSONALES.map(particular => {
-    return (`
-    <div class="col-sm-12 col-md-6 col-lg-3">
-                        <div class="cobertura2">
-                             <div class="particulares wrapper rounded">
+PERSONALES.forEach(persona => {
+    const col = document.createElement('div');
+    col.classList.add('col-sm-12', 'col-md-6', 'col-lg-3');
+    col.innerHTML = `
+                            <div class="cobertura2">
+                             <div class="particulares wrapper bg-surface-on-primary rounded-10px">
                                <img  class="image-card" src="../image/seguros_home_lg (1).png" alt="">
-                               <h4>${particular.nombre}</h4>
+                               <h4>${persona.nombre}</h4>
                              </div>
                             </div>    
-                     </div>
-    `)
-})
-   
+    `
+    rendercards_personas.appendChild(col);
+});
+
+
+
+
+
+
+
+
 
 
 
