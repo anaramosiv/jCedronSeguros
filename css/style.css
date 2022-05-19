@@ -62,20 +62,18 @@ li a{
 
 /* ----HOME----- */
 #home{
-  height: 100vh;
+  height: 100%; /* Cambie vh por % para hacer mas facil el responsive. Movi el id home al main para que sea mas sencillo definir las boxes y no mezclen elementos.*/
   background-image: url(../image/working11.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  width: 100%;
 }
-@media (max-width: 600px) {
-  #home{
-    background-image: url(../image/homeMobile.png);
-  }
-}
+
+
 h1{
   text-transform: uppercase;
-  padding-top: 20%;
+  padding-top: 15%;
   color: var(--primary-color);
 }
 
@@ -85,9 +83,8 @@ h1{
   font-weight: bold;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
-
-
 }
+
 .rounded a{
   border-radius: 10rem;
 }
@@ -104,10 +101,16 @@ h1{
   bottom: 20px;
   right: 20px;
 }
-
+.margin-main{
+  padding-bottom: 10%;
+  padding-left: 4%;
+}
 
 /* ----------------------------------COBERTURAS------------------------------ */
-
+.margen-medio{
+  margin-top: 5%; 
+  margin-bottom:3%;
+}
 /*--card--*/
 .wrapper{
   -webkit-box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.24);
@@ -134,8 +137,6 @@ box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.24);
 .my-auto{
   margin: auto 0;
 }
-
-
 
 .justify-contenido-around{
   justify-content: space-around;
@@ -175,9 +176,10 @@ box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.24);
 /* -----------------------------------------POR QUE ELEGIRNOS--------------------- */
 .porQue{
   background-color: #3DB6E9;
-  height: 100vh;
+  height: 100%;
   background-image: url(../image/flechas_home_lg.png)
 }
+
 .bg-card{
   background-color: var(--on-secondary-color);
   min-height: 60vh;
@@ -239,11 +241,12 @@ width: 50%;
 }
 
 .w-icon{
-  width: 3rem;
+  width: 2.5rem;
 }
 
 footer {
   background-color: #5e5e5e;
+  padding-top: 3rem;
 }
 .footerContact {
   
@@ -255,6 +258,10 @@ footer {
   align-content: center;
 
 }
+.telefonoFoot{
+display: flex;
+justify-content: flex-end;
+}
 .footerMedia img{
   width: 5%;
 }
@@ -262,10 +269,45 @@ footer {
 .ssn-icon{
   width: 40%;
 }
+/* -----------------------------------CONTACTO------------------------------------ */
 
+#face {
+  width: 110%;
+}
+
+/* -------------------------------------SEGUROS------------------------------ */
+
+.opacity-20{
+  background-color: rgba(39,167,225,0.2);
+}
+.seccionSeguro{
+
+padding: 3rem 0;
+}
+
+.registrales{
+  padding: 8rem 0 5rem 0;
+  
+}
+
+.registrales h4, p{
+text-align: center;
+  
+}
+
+.fotoRegis img{
+  margin: 0 auto;
+}
+
+
+/* ----------------------------------------SOBRE MI------------------------------------------- */
+
+.about{
+  padding: 3rem 0;
+}
 /*--------------------------------------------clases generales----------------------*/
 .h-screen{
-  height: 100vh;
+  height: 100%; /* Lo cambie por % por que es mas facil que los elementos se mantienen en sus respectivos recuadro cuando se achica la pantalla*/
 }
 
 .text-uppercase{
@@ -288,4 +330,211 @@ footer {
 
 .text-blue{
   color: var(--primary-color);
+}
+
+
+/*Media Query*/
+
+@media (max-width:1024px){
+  .map-size{
+    width: 110%;
+    height: 380px;
+  }
+}
+
+@media (max-width: 768px){
+  /*Por que elegirnos*/
+  .margen-medio{
+    margin-top: 25%; 
+  }
+  .bg-card{
+    height: 350px;
+    width: 60%
+
+  }
+  .image-size{
+    width: 135px;
+    height: 135px;
+  }
+  
+  .heading-decrease{
+    font-size: 125%!important;
+    line-height: 100%!important;
+  }
+  .text-decrease{
+    font-size: 90%;
+  }
+  /*Contacto*/
+  .w-icon2{
+    width: 8%;
+  }
+  .map-size{
+    height: 280px;
+    width: 90%;
+  }
+}
+
+
+@media (max-width: 600px) {
+  #home{
+    background-image: url(../image/homeMobile.png);
+    min-height: 90vh;
+  }
+  .margin-main{
+    padding-bottom: 25%;
+  }
+
+  /*Coberturas*/
+  h3{
+    font-size: 115%!important;
+  }
+  .image-decrease{
+    width: 50%;
+    height: 40%;
+  }
+  h4{
+    font-size: 90%!important;
+  }
+  
+  .cobertura2{
+    width: 100%;
+    padding-top:4rem;
+  }
+  .registrales{
+    padding: 3rem 1rem ;
+    text-align: center;
+  
+  }
+
+  
+  /*Por que elegirnos*/
+  .bg-card{
+    height: 300px;
+    width: 100%;
+    min-height: 30vh;
+   
+  }
+  .responsive-size{
+    width: 60%!important;
+    height: 25%;
+    margin-left: 20%!important;
+    margin-bottom: 3%;
+  }
+  .image-size{
+    width: 125px;
+    height: 120px;
+  }
+  .heading-decrease{
+    font-size: 88%!important;
+    line-height: 108%!important;
+  }
+  .text-decrease{
+    font-size: 78%;
+    width: 100%;
+  }
+  /*Footer*/
+  .w-icon{
+    width: 50%;
+    /* padding-left: 10px; */
+  }
+  .ocultarSmall{
+    display: none;
+  }
+  .ssn-icon{
+    width: 60%;
+    /* margin-left: 50px;
+    padding-bottom: 25px; */ 
+    /* No se centraba en mobile */
+    margin: 0 auto;
+  }
+
+  .bajarLinea{
+    display: block;
+  }
+  /*Contacto*/
+  .w-icon2{
+    width: 8%;
+  }
+  .map-size{
+    margin-top: 5px;
+    height: 240px;
+    width: 80%;
+  }
+   
+}
+@media (max-width: 425px){
+  /*Home*/
+  h1{
+    font-size: 250%!important;
+  }
+  h2{
+    font-size: 180%!important;
+  }
+
+  /*Por que elegirnos*/
+  .bg-card{
+    height: 250px;
+    min-height: 20vh;
+   
+  }
+  .image-size{
+    width: 90px;
+    height: 85px;
+  }
+  .heading-decrease{
+    font-size: 60%!important;
+  }
+  .text-decrease{
+    font-size: 58%;
+  }
+  /*Footer*/
+  .w-icon{
+    padding-left: 2px;
+  }
+
+  .footer-font{
+    font-size: 50%;
+  }
+  /*Contacto*/
+  .w-icon2{
+    width: 6%;
+  }
+  #face{
+    width: 90%;
+    padding-right: 25px;
+  }
+  
+}
+@media (max-width: 375px){
+   /*Por que elegirnos*/
+   .bg-card{
+    height: 150px;
+    min-height: 10vh;
+   
+  }
+  .image-size{
+    width: 60px;
+    height: 55px;
+  }
+  .heading-decrease{
+    font-size: 45%!important;
+  }
+  .text-decrease{
+    font-size: 48%;
+  }
+  /*Footer*/
+  .footer-font2{
+    font-size: 80%;
+  }  
+}
+@media (min-width: 768px){
+  #maiLogo, #moviLogo{
+    width:6%;
+
+  }
+  .margen-medio{
+    padding:5rem 0;
+  }
+
+  
 }

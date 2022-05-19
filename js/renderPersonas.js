@@ -4,20 +4,28 @@ const PERSONALES = [
     {
         id: 1,
         nombre: 'ACCIDENTES PERSONALES',
+        image: '../image/seguros_home_lg.png',
     },
     {
         id: 2,
         nombre: 'VIDA',
+        image: '../image/seguros_home_lg.png',
     },
     {
         id: 3,
         nombre: 'AHORROS',
+        image: '../image/seguros_home_lg.png',
     },
     {
         id: 4,
         nombre: 'INVERSIONES',
+        image: '../image/seguros_home_lg.png',
     },
-    
+    {
+        id: 5,
+        nombre: 'MASCOTAS',
+        image: '../image/seguros_home_lg.png',
+    },
 
 ];
 
@@ -33,7 +41,7 @@ PERSONALES.forEach(persona => {
     col.innerHTML = `
                             <div class="cobertura2">
                              <div class="particulares wrapper bg-surface-on-primary rounded-10px">
-                               <img  class="image-card" src="../image/seguros_home_lg (1).png" alt="">
+                               <img  img  class="image-card" src=${persona.image} alt=${persona.nombre}>
                                <h4>${persona.nombre}</h4>
                              </div>
                             </div>    
