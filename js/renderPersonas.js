@@ -4,27 +4,27 @@ const PERSONALES = [
     {
         id: 1,
         nombre: 'ACCIDENTES PERSONALES',
-        image: '../image/seguros_home_lg.png',
+        image: '../image/accidentespersonales_seg.png',
     },
     {
         id: 2,
         nombre: 'VIDA',
-        image: '../image/seguros_home_lg.png',
+        image: '../image/vida.png',
     },
     {
         id: 3,
         nombre: 'AHORROS',
-        image: '../image/seguros_home_lg.png',
+        image: '../image/ahorro.png',
     },
     {
         id: 4,
         nombre: 'INVERSIONES',
-        image: '../image/seguros_home_lg.png',
+        image: '../image/inversiones.png',
     },
     {
         id: 5,
         nombre: 'MASCOTAS',
-        image: '../image/seguros_home_lg.png',
+        image: '../image/mascotas.png',
     },
 
 ];

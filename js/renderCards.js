@@ -12,27 +12,27 @@ const PARTICULARES = [
     {
         id: 2,
         nombre: 'MOTOS',
-        image: '../image/seguros_home_lg.png',
+        image: '../image/motos_seg.png',
     },
     {
         id: 3,
         nombre: 'HOGARES',
-        image: '../image/seguros_home_lg.png',
+        image: '../image/hogares.png',
     },
     {
         id: 4,
         nombre: 'EMBARCACIONES',
-        image: '../image/seguros_home_lg.png',
+        image: '../image/ilus_emb_seg.png',
     },
     {
         id: 5,
         nombre: 'BICICLETAS',
-        image: '../image/seguros_home_lg.png',
+        image: '../image/ilus_bici_seg.png',
     },
     {
         id: 6,
         nombre: 'VIAJEROS',
-        image: '../image/seguros_home_lg.png',
+        image: '../image/ilus_viajeros_seg.png',
     },
 
 ];
@@ -44,7 +44,7 @@ const rendercards = document.querySelector('#seguros_particulares');
 
 PARTICULARES.forEach(seguro => {
     const col = document.createElement('div');
-    col.classList.add('col-sm-12', 'col-md-6', 'col-lg-3');
+    col.classList.add('col-sm-12', 'col-md-6', 'col-lg-3', 'cardsSeguros');
     col.innerHTML = `
                             <div class="cobertura2">
                              <div class="particulares wrapper bg-surface rounded-10px">

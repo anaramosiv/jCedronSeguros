@@ -4,30 +4,37 @@ const EMPRESARIALES = [
     {
         id: 1,
         nombre: 'INTEGRAL DE COMERCIO',
+        image: '../image/integraldecomercio.png',
     },
     {
         id: 2,
         nombre: 'SEGURO TÉCNICO',
+        image: '../image/segurotecnico_seg_lg.png',
     },
     {
         id: 3,
         nombre: 'ART',
+        image: '../image/art_seg_lg.png',
     },
     {
         id: 4,
         nombre: 'FLOTA',
+        image: '../image/flota_seg.png',
     },
     {
         id: 5,
         nombre: 'TRANSPORTE',
+        image: '../image/transporte_seg.png',
     },
     {
         id: 6,
         nombre: 'RESPOSABILIDAD CIVIL',
+        image: '../image/respcivil_seg.png',
     },
     {
         id: 7,
         nombre: 'GRANIZO',
+        image: '../image/integraldecomercio.png',
     },
 
 ];
@@ -43,7 +50,7 @@ EMPRESARIALES.forEach(seguro => {
     col.innerHTML = `
                             <div class="cobertura2">
                              <div class="particulares wrapper bg-surface rounded-10px">
-                               <img  class="image-card" src="../image/seguros_home_lg (1).png" alt="">
+                             <img  img  class="image-card" src=${seguro.image} alt=${seguro.nombre}>
                                <h4>${seguro.nombre}</h4>
                              </div>
                             </div>    

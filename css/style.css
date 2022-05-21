@@ -17,6 +17,8 @@
   background-color: var(--surface-on-primary);
 }
 
+
+
 .rounded-10px{
   border-radius: 10px;
 }
@@ -161,12 +163,12 @@ box-shadow: 10px 10px 24px 1px rgba(0,0,0,0.24);
   height: 100vh;
 }
 .cobertura2 {
-  padding: 2% 16%;
+  padding: 10% 10%;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-top: 5%;   /* contrarestar el efecto del tralado de las imagenes */
+  margin-top: 10%;   /* contrarestar el efecto del tralado de las imagenes */
 }
 
 .cobertura2 img {
@@ -247,6 +249,7 @@ width: 50%;
 footer {
   background-color: #5e5e5e;
   padding-top: 3rem;
+  overflow: hidden;
 }
 .footerContact {
   
@@ -295,10 +298,14 @@ text-align: center;
   
 }
 
-.fotoRegis img{
+#regisImg img{
+  width: 70%;
   margin: 0 auto;
 }
 
+.seccionseguro2{
+  padding: 5rem 0;
+}
 
 /* ----------------------------------------SOBRE MI------------------------------------------- */
 
@@ -372,6 +379,10 @@ text-align: center;
     height: 280px;
     width: 90%;
   }
+  #regisImg img{
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 
@@ -399,6 +410,8 @@ text-align: center;
   .cobertura2{
     width: 100%;
     padding-top:4rem;
+    padding-left: 16%;
+    padding-right: 16%;
   }
   .registrales{
     padding: 3rem 1rem ;
